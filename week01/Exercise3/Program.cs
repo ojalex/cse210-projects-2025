@@ -57,6 +57,7 @@ class Program
         
         while (yourGuess != magicNumber)
             {
+                Console.WriteLine($"What is the magic number? {magicNumber}");
                 Console.Write($"What is your guess? ");
                 string guess = Console.ReadLine();
                 yourGuess = int.Parse(guess);
@@ -64,7 +65,7 @@ class Program
                 numberOfGuess = numberOfGuess + 1;
 
                 if (yourGuess < magicNumber)
-                {
+                { 
                     text = "Lower";
                 }
                 else if (yourGuess > magicNumber)
@@ -73,7 +74,6 @@ class Program
                 }
                 else
                 {
-                    Console.WriteLine($"What is the magic number? {magicNumber}");
                     text = $"You guessed it! after {numberOfGuess} trials.";
                 }
                 
