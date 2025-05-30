@@ -6,7 +6,7 @@ public class Reference
     private int _verseStart;
     private int _verseEnd;
 
-    // Constructor initializes reference info
+    // initializes reference info
     public Reference(string book, int chapter, int verseStart, int verseEnd = -1)
     {
         _book = book;
