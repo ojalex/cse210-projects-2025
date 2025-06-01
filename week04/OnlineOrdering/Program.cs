@@ -4,13 +4,15 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Create addresses
+        // Create addresses of customers
         Address address1 = new Address("40632 Nyamonye", "Siaya", "Nyanza", "KE");
         Address address2 = new Address("50100 Amalemba", "Kakamega", "Western", "KE");
+        Address address3 = new Address("40100 Milimani", "Kisumu", "Nyanza", "KE");
 
         // Create customers
         Customer customer1 = new Customer("Jackline Otieno", address1);
         Customer customer2 = new Customer("Tom Juma", address2);
+        Customer customer3 = new Customer("Joel Clinton", address3);
 
         // Create orders
         Order order1 = new Order(customer1);
